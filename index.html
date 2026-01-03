@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background Music -->
+    <!-- Note to User: Place your song as 'song.mp3' in the root folder or update the src -->
+    <audio id="bg-music" loop>
+        <source src="song3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Initial Screen: The Heart & Envelope -->
+    <div id="intro-screen">
+        <div class="glass-panel">
+            <h1 class="title">Meri Sani</h1>
+            <p class="subtitle">I have a special message for you.</p>
+
+            <div class="heart-container" id="open-btn">
+                <div class="heart"></div>
+                <div class="click-hint">Tap the heart</div>
+            </div>
+
+            <div class="formal-footer">
+                <p>From: Your Love</p>
+                <p>Date: <span id="current-date"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content: The Letter & Gallery -->
+    <div id="main-content">
+        <div class="floating-hearts-bg" id="hearts-bg"></div>
+
+        <nav class="top-nav">
+            <button id="music-btn" class="icon-btn"><i class="fas fa-music"></i></button>
+        </nav>
+
+        <div class="content-wrapper">
+            <!-- 3-Column Layout -->
+            <div class="three-column-layout">
+                <!-- Left Column: Photos -->
+                <div class="photo-column left-column" id="left-photos"></div>
+
+                <!-- Center Column: Letter -->
+                <div class="letter-column">
+                    <!-- Photo Carousel for Mobile -->
+                    <div class="photo-carousel" id="photo-carousel">
+                        <div class="carousel-container">
+                            <button class="carousel-btn prev" id="carousel-prev">‹</button>
+                            <div class="carousel-track-container">
+                                <div class="carousel-track" id="carousel-track">
+                                    <!-- Photos will be injected by JS -->
+                                </div>
+                            </div>
+                            <button class="carousel-btn next" id="carousel-next">›</button>
+                        </div>
+                        <div class="carousel-indicators" id="carousel-indicators"></div>
+                    </div>
+                    
+                    <div class="letter-container">
+                        <div class="letter-paper">
+                            <h2>My Love, 💕</h2>
+                            <div class="letter-body">
+                                <p>Happy Birthday! 🎉 Today marks another beautiful year of your amazing existence, and
+                                    as this day comes around again, I find myself thinking back to that exact day five
+                                    years ago when I first tried (and apparently succeeded!) to impress you. 😂💘</p>
+
+                                <p>Looking back at those old posts and wishes makes me laugh now because they seem so
+                                    silly, but they were the start of everything. ✨ They were my awkward way of showing
+                                    you how much you meant to me, even back then. 💖</p>
+
+                                <p>I still remember how we moved from being close friends to best friends, and finally,
+                                    to where we are today. You aren't just my girlfriend; you are my person. You are my
+                                    everything. 😌❤️✨</p>
+
+                                <p>Watching you grow, laugh, and shine has been the
+                                greatest privilege of my life. Your smile lights up even my darkest days😊💕.</p>
+
+                                <p>I want you to know how much I admire you. 🌟 The way you care about other people, your emotional intelligence, your desire to be loved (jati mayale ni pugdaina) – everything about you amazes me every single day. 💫 Please, stay
+                                    exactly as you are—you are pure, and you have a unique way about life that I
+                                    absolutely love. 🌹 Never doubt yourself or think you aren't enough; to me, you are
+                                    perfect, kaile kai guu hunxeu teipaniiii 😚💕.</p>
+
+                                <p>You bring so much joy, warmth, and love into my world. 🌺 You make me want to be a
+                                    better person, and you inspire me in ways you probably don't even realize. Thank you
+                                    for being you – for your patience, your love, your understanding, and for choosing
+                                    to share your life with me. 💑✨</p>
+
+                                <p>May you stay healthy, happy, and full of life. 🌸 I hope you find the strength to face
+                                    every challenge with that amazing courage of yours. You deserve all the happiness in
+                                    the world, 🌍💕 and I promise to do everything I can to make you smile, not just today,
+                                    but every day we have together. 😊💖</p>
+
+                                <p>I hope you continue to be the pride of your Baba and Mummy. They are blessed to have
+                                    such a wonderful daughter, just as I am blessed to have you in my life.💝</p>
+
+                                <p>May your studies and your career reach the heights you've always dreamed of. ✨ I
+                                    believe in you completely, and I know you will achieve everything you set your heart
+                                    on. 🌟</p>
+
+                                <p>And most importantly... keep loving me forever! 🙁😚💕 Because I love you more than
+                                    words could ever express, 💖💫 and I can't imagine my life without you in it. 🥰</p>
+
+                                <div class="highlight-quote">
+                                    "You are amazing my gudiya, and you deserve the world. 🌍✨ May this year bring
+                                    you closer to your dreams and fill your heart with everything you've ever wished
+                                    for. 🌟💕 May this year be a massive year of growth and wellbeing for you. 🦋"
+                                </div>
+
+                                <p>On this special day, I wish you all the love, joy, and wonderful surprises that life
+                                    has to offer. 🎊🎈💝 Here's to celebrating you today and always. 🥂✨</p>
+
+                                <p>You're saduuupadu and you're amazing 🤗❤️💫.</p>
+
+                                <p>I love you so much, mero bacha! 🐣💕 Happy Birthday feri paniiii! 🎂🎉😚❤️🥀</p>
+                            </div>
+                            <div class="signature">
+                                <p>Forever Yours,</p>
+                                <p class="signer-name">SRN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Photos -->
+                <div class="photo-column right-column" id="right-photos"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+
+</html>
