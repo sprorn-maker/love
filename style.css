@@ -332,7 +332,7 @@ body.intro-active {
 
 .letter-paper {
     background-color: var(--paper-color);
-    background-image: url('photos/image5.jpg');
+    background-image: url('image5.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
