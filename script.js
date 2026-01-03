@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
             slide.className = 'carousel-slide';
             
             const img = document.createElement('img');
-            img.src = `photos/${imgName}`;
+            img.src = `${imgName}`;
             img.alt = `Memory ${index + 1}`;
             img.loading = index === 0 ? 'eager' : 'lazy';
             
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
             polaroid.setAttribute('data-caption', `❤️`);
 
             const img = document.createElement('img');
-            img.src = `photos/${imgName}`;
+            img.src = `${imgName}`;
             img.alt = `Our Memory ${index + 1}`;
             img.loading = 'lazy';
 
